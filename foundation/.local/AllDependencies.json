@@ -1604,15 +1604,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\seokwon\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "foundation",
       "projectName": "foundation",
-      "projectPath": "C:\\Users\\USER\\Documents\\uipath\\RPAPlayGround\\foundation\\.local",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Documents\\uipath\\RPAPlayGround\\foundation\\.local"
+      "projectPath": "C:\\Users\\seokwon\\OneDrive\\문서\\UiPath\\foundation\\.local",
+      "packagesPath": "C:\\Users\\seokwon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\seokwon\\OneDrive\\문서\\UiPath\\foundation\\.local"
     },
     "frameworks": {
       "net461": {
@@ -1640,14 +1640,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Extended.Wpf.Toolkit 2.8' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Extended.Wpf.Toolkit"
-    }
-  ]
+  }
 }
