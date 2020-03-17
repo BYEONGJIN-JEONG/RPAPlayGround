@@ -1604,15 +1604,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\seokwon\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "foundation",
       "projectName": "foundation",
-      "projectPath": "C:\\Users\\seokwon\\OneDrive\\문서\\UiPath\\foundation\\.local",
-      "packagesPath": "C:\\Users\\seokwon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seokwon\\OneDrive\\문서\\UiPath\\foundation\\.local"
+      "projectPath": "C:\\Users\\USER\\Documents\\uipath\\RPAPlayGround\\foundation\\.local",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Documents\\uipath\\RPAPlayGround\\foundation\\.local"
     },
     "frameworks": {
       "net461": {
