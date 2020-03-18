@@ -1,4 +1,15 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_2001_결과파일작성" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="538.4,2370.4" sap2010:WorkflowViewState.IdRef="_2001_결과파일작성_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uee="clr-namespace:UiPathTeam.Excel.Extensions;assembly=Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_2001_결과파일작성" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:uee="clr-namespace:UiPathTeam.Excel.Extensions;assembly=Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Str_FilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_AryStr_FinanceList" Type="InArgument(s:String[])" />
+    <x:Property Name="in_AryStr_Years" Type="InArgument(s:String[])" />
+    <x:Property Name="in_AryStr_kinds" Type="InArgument(s:String[])" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>538.4,2361.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>_2001_결과파일작성_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -53,7 +64,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_2001_결과파일생성" sap:VirtualizedContainerService.HintSize="518.4,2270.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_2001_결과파일생성" sap:VirtualizedContainerService.HintSize="518.4,2301.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Str_FilePath" />
       <Variable x:TypeArguments="s:String[]" Name="AryStr_FinanceList" />
@@ -71,7 +82,7 @@
         <OutArgument x:TypeArguments="x:String">[Str_FilePath]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">C:\RPA\KS_재정통계자료작성\</InArgument>
+        <InArgument x:TypeArguments="x:String">[in_Str_FilePath]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -84,7 +95,7 @@
         <OutArgument x:TypeArguments="s:String[]">[AryStr_FinanceList]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[{"총액","총지출","추경포함","외화"}]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[in_AryStr_FinanceList]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -92,20 +103,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="476.8,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign sap2010:Annotation.AnnotationText="{}{&quot;2018&quot;,&quot;2019&quot;}" sap:VirtualizedContainerService.HintSize="476.8,91.2" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[AryStr_Years]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[{"2019", "2018"}]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[in_AryStr_Years]</InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
     <Assign sap:VirtualizedContainerService.HintSize="476.8,60" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[AryStr_Fkinds]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[{"세목","세부사업"}]</InArgument>
+        <InArgument x:TypeArguments="s:String[]">[in_AryStr_kinds]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:CopyFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="from&#xA;Str_FilePath+&quot;Template\세출_지출_세목_세부사업_탬플릿.xlsx&quot;&#xA;to&#xA;Str_FilePath+&quot;Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;" Destination="[Str_FilePath+&quot;Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="476.8,252" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[Str_FilePath+&quot;Template\세출_지출_세목_세부사업_탬플릿.xlsx&quot;]">
