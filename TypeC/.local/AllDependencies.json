@@ -1604,15 +1604,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\KoreaScoring\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "TypeC",
       "projectName": "TypeC",
-      "projectPath": "C:\\Users\\USER\\OneDrive\\문서\\UiPath\\TypeC\\.local",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\OneDrive\\문서\\UiPath\\TypeC\\.local"
+      "projectPath": "C:\\RPAPlayGround\\TypeC\\.local",
+      "packagesPath": "C:\\Users\\KoreaScoring\\.nuget\\packages\\",
+      "outputPath": "C:\\RPAPlayGround\\TypeC\\.local"
     },
     "frameworks": {
       "net461": {
