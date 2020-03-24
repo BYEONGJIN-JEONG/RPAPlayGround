@@ -1,0 +1,298 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SearchWorkItem" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_DT_WIIDwithWI4Opened" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_Str_ACMESystem1" Type="InArgument(x:String)" />
+    <x:Property Name="out_DT_vendorInformation" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>586.4,3784</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SearchWorkItem_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SearchWorkItem" sap:VirtualizedContainerService.HintSize="566.4,3724" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_VendorInformation" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_WIIDwithWI4Opened" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_WorkItems" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="//DT_VendorInformation&#xA;{Str_TaxId, Str_Name, Str_Address, Str_City}" DataTable="[DT_VendorInformation]" DisplayName="Build TaxId Data Table" sap:VirtualizedContainerService.HintSize="524.8,104" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Str_TaxId&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Str_Name&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Str_Address&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Str_City&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="ACME 로그인 화면에서 시작" sap:VirtualizedContainerService.HintSize="524.8,453.6" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="9bdf60aabccb7593456a04e142540005" Selector="&lt;html title='ACME System 1 - Dashboard' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,306.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT_WorkItems" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay sap2010:Annotation.AnnotationText="//Delay 00:00:02" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="333.6,53.6" sap2010:WorkflowViewState.IdRef="Delay_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Delay>
+            <ui:NavigateTo Browser="{x:Null}" sap2010:Annotation.AnnotationText="https://acme-test.uipath.com/work-items/&#xA;&#xA;in_Str_ACMESystem1+&quot;work-items&quot;/" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,120" sap2010:WorkflowViewState.IdRef="NavigateTo_2" Url="https://acme-test.uipath.com/work-items/">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:NavigateTo>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BrowserScope>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'ACMESyste Page'" sap:VirtualizedContainerService.HintSize="524.8,423.2" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="e1026550fa5c5905f0d020c2a428cdaa" Selector="&lt;html title='ACME System 1 - Work Items' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,276" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" sap2010:Annotation.AnnotationText="output&#xA;DT_WorkItems&#xA;&#xA;{Actions, WIID, Description, Type, Status, Data}" ContinueOnError="True" DataTable="[DT_WorkItems]" DisplayName="Extract Structured Data 'TABLE'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest' /&gt;" sap:VirtualizedContainerService.HintSize="333.6,183.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="10" NextLinkSelector="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" SimulateClick="True">
+              <ui:ExtractData.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="db97814275f1575ad29be492daa9b046" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:ExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ExtractData>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <ui:FilterDataTable sap2010:Annotation.AnnotationText="//&#xA;input&#xA;DT_WorkItems&#xA;&#xA;output&#xA;DT_WIIDwithWI4Opened&#xA;{WIID}&#xA;Type = WI4&#xA;Status = Open" DataTable="[DT_WorkItems]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="524.8,216" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DT_WIIDwithWI4Opened]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Type"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["WI4"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Status"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["Open"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">["WIID"]</InArgument>
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:FilterDataTable>
+    <ui:ForEachRow CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="//필터로 거른 WIID만 TaxId를 찾는다." DataTable="[DT_WIIDwithWI4Opened]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="524.8,2074.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,1894.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Str_TaxID" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[row(0)]" />
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe ACME'" sap:VirtualizedContainerService.HintSize="433.6,551.2" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="92908c485ede21d3d834359a7d696e30" Selector="&lt;html title='ACME System 1 - Work Items' /&gt;">
+              <ui:BrowserScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,404" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:NavigateTo Browser="{x:Null}" sap2010:Annotation.AnnotationText="https://acme-test.uipath.com/work-items/559824&#xA;&#xA;in_Str_ACMESystem1+&quot;work-items/&quot;+row(0).ToString" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="333.6,120" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_Str_ACMESystem1+&quot;work-items/&quot;+row(0).ToString]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:NavigateTo>
+                    <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="output&#xA;Str_TaxID" DisplayName="Vendor Information 전체 Text 긁어오기" sap:VirtualizedContainerService.HintSize="333.6,151.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="02f03ceec93c6ba6f3dac3d6b377c91c" Selector="&lt;webctrl idx='1' tag='P' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[Str_TaxID]</OutArgument>
+                      </ui:GetValue.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:GetValue>
+                  </Sequence>
+                </ActivityAction>
+              </ui:BrowserScope.Body>
+            </ui:BrowserScope>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(0).Split(&quot;:&quot;.ToCharArray)(1).Trim" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,152.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(0).Split(&quot;:&quot;.ToCharArray)(1).Trim]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(2).Split(&quot;:&quot;.ToCharArray)(1).Trim" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,152.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(2).Split(&quot;:&quot;.ToCharArray)(1).Trim]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(4).Split(&quot;:&quot;.ToCharArray)(1).Trim" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,152.8" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(4).Split(&quot;:&quot;.ToCharArray)(1).Trim]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:LogMessage sap2010:Annotation.AnnotationText="Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(6).Split(&quot;:&quot;.ToCharArray)(1).Trim" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,152.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(6).Split(&quot;:&quot;.ToCharArray)(1).Trim]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+            <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="{}{Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(0).Split(&quot;:&quot;.ToCharArray)(1).Trim, Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(2).Split(&quot;:&quot;.ToCharArray)(1).Trim, Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(4).Split(&quot;:&quot;.ToCharArray)(1).Trim,&#xA;Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(6).Split(&quot;:&quot;.ToCharArray)(1).Trim} into DT_VendorInformation" ArrayRow="[{Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(0).Split(&quot;:&quot;.ToCharArray)(1).Trim, Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(2).Split(&quot;:&quot;.ToCharArray)(1).Trim, Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(4).Split(&quot;:&quot;.ToCharArray)(1).Trim,Str_TaxID.Split(System.Environment.NewLine.ToCharArray)(6).Split(&quot;:&quot;.ToCharArray)(1).Trim}]" DataTable="[DT_VendorInformation]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,306.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:AddDataRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <Assign sap:VirtualizedContainerService.HintSize="524.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[out_DT_WIIDwithWI4Opened]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[DT_WIIDwithWI4Opened]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="524.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[out_DT_vendorInformation]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[DT_VendorInformation]</InArgument>
+      </Assign.Value>
+    </Assign>
+  </Sequence>
+</Activity>
