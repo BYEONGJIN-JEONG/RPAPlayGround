@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>892.8,4697.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>789.6,1429.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_2003_Excel정렬_합계_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
@@ -64,7 +64,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_2003_Excel정렬_합계" sap:VirtualizedContainerService.HintSize="872.8,4597.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_2003_Excel정렬_합계" sap:VirtualizedContainerService.HintSize="769.6,1369.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:WorkbookApplication" Name="WB_Temp" />
       <Variable x:TypeArguments="sd:DataTable" Name="DT_SemokTotalPay" />
@@ -84,47 +84,47 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="831.2,4504.8" sap2010:WorkflowViewState.IdRef="ForEach`1_14" Values="[in_AryStr_Kinds]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="728,1276.8" sap2010:WorkflowViewState.IdRef="ForEach`1_14" Values="[in_AryStr_Kinds]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="kind" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="796,4370.4" sap2010:WorkflowViewState.IdRef="Sequence_95">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="692.8,1142.4" sap2010:WorkflowViewState.IdRef="Sequence_95">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="754.4,4277.6" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[in_AryStr_FinanceList]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="651.2,1049.6" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[in_AryStr_FinanceList]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="Finance" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="719.2,4143.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="616,915.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="677.6,4050.4" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[in_AryStr_Years]">
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="574.4,822.4" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[in_AryStr_Years]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="Year" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="642.4,3916" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="539.2,688" sap2010:WorkflowViewState.IdRef="Sequence_36">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="600.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[in_Str_FilePath+&quot;SourceData\&quot;+kind+&quot;\&quot;+kind+&quot;(&quot;+Finance+&quot;)-&quot;+Year+&quot;.xls&quot;]" />
-                            <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="//Output&#xA;WB_Temp" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="600.8,96.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Workbook="[WB_Temp]" WorkbookPath="[in_Str_FilePath+&quot;SourceData\&quot;+kind+&quot;\&quot;+kind+&quot;(&quot;+Finance+&quot;)-&quot;+Year+&quot;.xls&quot;]">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="497.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[in_Str_FilePath+&quot;SourceData\&quot;+kind+&quot;\&quot;+kind+&quot;(&quot;+Finance+&quot;)-&quot;+Year+&quot;.xls&quot;]" />
+                            <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="//Output&#xA;WB_Temp" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="497.6,96.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" Workbook="[WB_Temp]" WorkbookPath="[in_Str_FilePath+&quot;SourceData\&quot;+kind+&quot;\&quot;+kind+&quot;(&quot;+Finance+&quot;)-&quot;+Year+&quot;.xls&quot;]">
                               <ui:ExcelApplicationScope.Body>
                                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                                   <ActivityAction.Argument>
@@ -187,8 +187,12 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ExcelApplicationScope>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Finance]" sap:VirtualizedContainerService.HintSize="600.8,3553.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-                              <Sequence x:Key="총지출" sap:VirtualizedContainerService.HintSize="560.8,3296.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Finance]" sap:VirtualizedContainerService.HintSize="497.6,325.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                              <Sequence x:Key="총지출" sap:VirtualizedContainerService.HintSize="560.8,3064" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="sd:DataTable" Name="DT_General" />
+                                  <Variable x:TypeArguments="sd:DataTable" Name="DT_ETC" />
+                                </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -448,13 +452,35 @@
                                     </Sequence>
                                   </If.Then>
                                 </If>
-                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="519.2,1877.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[in_AryStr_Departments]">
+                                <Sequence sap2010:Annotation.AnnotationText="build data table&#xD;&#xA;&#xD;&#xA;총지출 2018General&#xD;&#xA;{전년도국회확정금액, 정부안금액, 국회확정금액}&#xD;&#xA;&#xD;&#xA;return DT_General&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;총지출 2018ETC&#xA;{전년도국회확정금액, 정부안금액, 국회확정금액}&#xA;&#xA;return DT_ETC" sap:VirtualizedContainerService.HintSize="519.2,608.8" sap2010:WorkflowViewState.IdRef="Sequence_125">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:BuildDataTable sap2010:Annotation.AnnotationText="총지출 2018General&#xD;&#xA;{전년도국회확정금액, 정부안금액, 국회확정금액}&#xD;&#xA;&#xD;&#xA;return DT_General" DataTable="[DT_General]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="333.6,136" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;전년도국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;정부안금액&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:BuildDataTable>
+                                  <ui:BuildDataTable sap2010:Annotation.AnnotationText="총지출 2018ETC&#xA;{전년도국회확정금액, 정부안금액, 국회확정금액}&#xA;&#xA;return DT_ETC" DataTable="[DT_ETC]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="333.6,136" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;전년도국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;정부안금액&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:BuildDataTable>
+                                </Sequence>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="519.2,903.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[in_AryStr_Departments]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                                       </ActivityAction.Argument>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="396,1743.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="375.2,768.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:Double" Name="Double_Sum1" />
                                           <Variable x:TypeArguments="x:Double" Name="Double_Sum3" />
@@ -465,7 +491,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 = 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명, 전년도국회확정금액(천원)&#xA;,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokTotalPay&#xA;output : &#xA;DT_SemokGeneral" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="354.4,248" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[DT_SemokGeneral]" SelectColumnsMode="Remove">
+                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 = 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명, 전년도국회확정금액(천원)&#xA;,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokTotalPay&#xA;output : &#xA;DT_SemokGeneral" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="333.6,248" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[DT_SemokGeneral]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                               <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -499,7 +525,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:FilterDataTable>
-                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 != 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명, 전년도국회확정금액(천원)&#xA;,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokTotalPay&#xA;output : &#xA;DT_SemokETC" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="354.4,248" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[DT_SemokETC]" SelectColumnsMode="Remove">
+                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 != 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명, 전년도국회확정금액(천원)&#xA;,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokTotalPay&#xA;output : &#xA;DT_SemokETC" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="333.6,248" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[DT_SemokETC]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                               <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -533,137 +559,199 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:FilterDataTable>
-                                        <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Double">0</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                        <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Double">0</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                        <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Double">0</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                        <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SemokGeneral]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="354.4,681.6" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
-                                          <ui:ForEachRow.Body>
-                                            <ActivityAction x:TypeArguments="sd:DataRow">
-                                              <ActivityAction.Argument>
-                                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
-                                              </ActivityAction.Argument>
-                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304.8,532.8" sap2010:WorkflowViewState.IdRef="Sequence_123">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                                <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum1+Double.Parse(row(1).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_1">
-                                                  <Assign.To>
-                                                    <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
-                                                  </Assign.To>
-                                                  <Assign.Value>
-                                                    <InArgument x:TypeArguments="x:Double">[Double_Sum1+Double.Parse(row(1).ToString.Replace(",","").Trim)]</InArgument>
-                                                  </Assign.Value>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </Assign>
-                                                <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum2+Double.Parse(row(2).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_2">
-                                                  <Assign.To>
-                                                    <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
-                                                  </Assign.To>
-                                                  <Assign.Value>
-                                                    <InArgument x:TypeArguments="x:Double">[Double_Sum2+Double.Parse(row(2).ToString.Replace(",","").Trim)]</InArgument>
-                                                  </Assign.Value>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </Assign>
-                                                <Assign sap2010:Annotation.AnnotationText="Double_Sum3 = Double_Sum3+Double.Parse(row(3).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_3">
-                                                  <Assign.To>
-                                                    <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
-                                                  </Assign.To>
-                                                  <Assign.Value>
-                                                    <InArgument x:TypeArguments="x:Double">[Double_Sum3+Double.Parse(row(3).ToString.Replace(",","").Trim)]</InArgument>
-                                                  </Assign.Value>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </Assign>
-                                              </Sequence>
-                                            </ActivityAction>
-                                          </ui:ForEachRow.Body>
-                                        </ui:ForEachRow>
-                                        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="354.4,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[in_Str_FilePath+&quot;\Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;]">
-                                          <ui:ExcelApplicationScope.Body>
-                                            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-                                              <ActivityAction.Argument>
-                                                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-                                              </ActivityAction.Argument>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="836,551.2" sap2010:WorkflowViewState.IdRef="Sequence_102">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                                <If Condition="[Year = &quot;2018&quot;]" sap:VirtualizedContainerService.HintSize="794.4,458.4" sap2010:WorkflowViewState.IdRef="If_4">
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                  <If.Then>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_115">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="C6" />
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="C17" />
-                                                    </Sequence>
-                                                  </If.Then>
-                                                  <If.Else>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_116">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_3" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="F6" />
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_4" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="F17" />
-                                                    </Sequence>
-                                                  </If.Else>
-                                                </If>
-                                              </Sequence>
-                                            </ActivityAction>
-                                          </ui:ExcelApplicationScope.Body>
+                                        <Sequence sap2010:Annotation.AnnotationText="합계구하는 반복문" sap:VirtualizedContainerService.HintSize="333.6,100" sap2010:WorkflowViewState.IdRef="Sequence_126">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                        </ui:ExcelApplicationScope>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SemokGeneral]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="263.2,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
+                                            <ui:ForEachRow.Body>
+                                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304.8,532.8" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum1+Double.Parse(row(1).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum1+Double.Parse(row(1).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum2+Double.Parse(row(2).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum2+Double.Parse(row(2).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum3 = Double_Sum3+Double.Parse(row(3).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum3+Double.Parse(row(3).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEachRow.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ForEachRow>
+                                          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="add to DT_General&#xD;&#xA;ArrayRow&#xD;&#xA;{Double_Sum1, Double_Sum2, Double_Sum3}" ArrayRow="[{Double_Sum1, Double_Sum2, Double_Sum3}]" DataTable="[DT_General]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="263.2,114.4" sap2010:WorkflowViewState.IdRef="AddDataRow_13">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:AddDataRow>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="263.2,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SemokETC]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="263.2,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_18">
+                                            <ui:ForEachRow.Body>
+                                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304.8,532.8" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum1+Double.Parse(row(1).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum1+Double.Parse(row(1).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum2+Double.Parse(row(2).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum2+Double.Parse(row(2).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum3 = Double_Sum3+Double.Parse(row(3).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum3]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum3+Double.Parse(row(3).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEachRow.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ForEachRow>
+                                          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="add to DT_ETC&#xA;ArrayRow&#xA;{Double_Sum1, Double_Sum2, Double_Sum3}" ArrayRow="[{Double_Sum1, Double_Sum2, Double_Sum3}]" DataTable="[DT_ETC]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="263.2,114.4" sap2010:WorkflowViewState.IdRef="AddDataRow_14">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:AddDataRow>
+                                        </Sequence>
                                       </Sequence>
                                     </ActivityAction>
                                   </ui:ForEach.Body>
@@ -674,15 +762,71 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEach>
+                                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="519.2,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[in_Str_FilePath+&quot;\Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;]">
+                                  <ui:ExcelApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                      </ActivityAction.Argument>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="836,551.2" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[Year = &quot;2018&quot;]" sap:VirtualizedContainerService.HintSize="794.4,458.4" sap2010:WorkflowViewState.IdRef="If_4">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_General]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="C6" />
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_ETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="C17" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_General]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_3" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="F6" />
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_ETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_4" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총지출)&quot;]" StartingCell="F17" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ExcelApplicationScope.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ExcelApplicationScope>
                               </Sequence>
-                              <Sequence x:Key="총액" sap:VirtualizedContainerService.HintSize="452,1109.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                              <Sequence x:Key="총액" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="sd:DataTable" Name="DT_General" />
+                                  <Variable x:TypeArguments="sd:DataTable" Name="DT_ETC" />
+                                </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:FilterDataTable sap2010:Annotation.AnnotationText="//[&quot;소관명&quot;, &quot;회계명&quot;,&quot;&quot;정부안금액(천원)&quot;&quot;,&quot;국회확정금액(천원)&quot;]&#xA;감 사 원&#xA;경 찰 청&#xA;고 용 노 동 부&#xA;관 세 청&#xA;교 육 부&#xA;국 방 부&#xA;국 회&#xA;기 획 재 정 부&#xA;대 법 원&#xA;보 건 복 지 부 &#xA;&#xA;input : DT_Temp1&#xA;output : DT_FilteredTemp1" DataTable="[DT_Temp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="410.4,312" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[DT_FilteredTemp1]" SelectColumnsMode="Keep">
+                                <ui:FilterDataTable sap2010:Annotation.AnnotationText="//[&quot;소관명&quot;, &quot;회계명&quot;,&quot;&quot;정부안금액(천원)&quot;&quot;,&quot;국회확정금액(천원)&quot;]&#xA;감 사 원&#xA;경 찰 청&#xA;고 용 노 동 부&#xA;관 세 청&#xA;교 육 부&#xA;국 방 부&#xA;국 회&#xA;기 획 재 정 부&#xA;대 법 원&#xA;보 건 복 지 부 &#xA;&#xA;input : DT_Temp1&#xA;output : DT_FilteredTemp1" DataTable="[DT_Temp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="869.6,312" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[DT_FilteredTemp1]" SelectColumnsMode="Keep">
                                   <ui:FilterDataTable.Filters>
                                     <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="16">
                                       <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -783,7 +927,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:FilterDataTable>
-                                <If Condition="[WB_Temp.GetSheets.Count &gt; 1]" sap:VirtualizedContainerService.HintSize="410.4,52.8" sap2010:WorkflowViewState.IdRef="If_6">
+                                <If Condition="[WB_Temp.GetSheets.Count &gt; 1]" sap:VirtualizedContainerService.HintSize="869.6,52.8" sap2010:WorkflowViewState.IdRef="If_6">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -933,19 +1077,41 @@
                                     </Sequence>
                                   </If.Then>
                                 </If>
-                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="410.4,824" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[in_AryStr_Departments]">
+                                <Sequence sap2010:Annotation.AnnotationText="build data table&#xA;&#xA;총액 2018General&#xA;{정부안금액, 국회확정금액}&#xA;&#xA;return DT_General&#xA;&#xA;&#xA;총액 2018ETC&#xA;{정부안금액, 국회확정금액}&#xA;&#xA;return DT_ETC" sap:VirtualizedContainerService.HintSize="869.6,608.8" sap2010:WorkflowViewState.IdRef="Sequence_127">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:BuildDataTable sap2010:Annotation.AnnotationText="총지출 2018General&#xA;{정부안금액, 국회확정금액}&#xA;&#xA;return DT_General" DataTable="[DT_General]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="333.6,136" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;정부안금액&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:BuildDataTable>
+                                  <ui:BuildDataTable sap2010:Annotation.AnnotationText="총지출 2018ETC&#xA;{정부안금액, 국회확정금액}&#xA;&#xA;return DT_ETC" DataTable="[DT_ETC]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="333.6,136" sap2010:WorkflowViewState.IdRef="BuildDataTable_4" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;전년도국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xA;                &lt;xs:element name=&quot;정부안금액&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;국회확정금액&quot; type=&quot;xs:double&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:BuildDataTable>
+                                </Sequence>
+                                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="869.6,2655.2" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[in_AryStr_Departments]">
                                   <ui:ForEach.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                                       </ActivityAction.Argument>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="375.2,689.6" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="437.6,2520.8" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 = 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokWiHwa&#xA;output : &#xA;DT_SemokGeneral" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="333.6,232" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[DT_SemokGeneral]" SelectColumnsMode="Remove">
+                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 = 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokWiHwa&#xA;output : &#xA;DT_SemokGeneral" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="396,232" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[DT_SemokGeneral]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                               <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -979,7 +1145,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:FilterDataTable>
-                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 != 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokWiHwa&#xA;output : &#xA;DT_SemokETC" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="333.6,232" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[DT_SemokETC]" SelectColumnsMode="Remove">
+                                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="소관명 = item.ToString&#xA;회게명 != 일반회계&#xA;.&#xA;.&#xA;.&#xA;Column:&#xA;소관명,정부안금액(달러), 국회확정금액(달러)&#xA;input : DT_SemokWiHwa&#xA;output : &#xA;DT_SemokETC" DataTable="[DT_FilteredTemp1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="396,232" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[DT_SemokETC]" SelectColumnsMode="Remove">
                                           <ui:FilterDataTable.Filters>
                                             <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                               <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -1013,58 +1179,162 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:FilterDataTable>
-                                        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" WorkbookPath="[in_Str_FilePath+&quot;\Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;]">
-                                          <ui:ExcelApplicationScope.Body>
-                                            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-                                              <ActivityAction.Argument>
-                                                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-                                              </ActivityAction.Argument>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="836,551.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                                <If Condition="[Year = &quot;2018&quot;]" sap:VirtualizedContainerService.HintSize="794.4,458.4" sap2010:WorkflowViewState.IdRef="If_7">
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                  <If.Then>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_117">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="C6" />
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_7" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="C17" />
-                                                    </Sequence>
-                                                  </If.Then>
-                                                  <If.Else>
-                                                    <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_118">
-                                                      <sap:WorkflowViewStateService.ViewState>
-                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                        </scg:Dictionary>
-                                                      </sap:WorkflowViewStateService.ViewState>
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_6" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="E6" />
-                                                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_8" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="E17" />
-                                                    </Sequence>
-                                                  </If.Else>
-                                                </If>
-                                              </Sequence>
-                                            </ActivityAction>
-                                          </ui:ExcelApplicationScope.Body>
+                                        <Sequence sap2010:Annotation.AnnotationText="합계구하는 반복문" sap:VirtualizedContainerService.HintSize="396,1884" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="sd:DataTable" Name="DT_ETC" />
+                                            <Variable x:TypeArguments="x:Double" Name="Double_Sum1" />
+                                            <Variable x:TypeArguments="x:Double" Name="Double_Sum2" />
+                                          </Sequence.Variables>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                        </ui:ExcelApplicationScope>
+                                          <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SemokGeneral]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="354.4,521.6" sap2010:WorkflowViewState.IdRef="ForEachRow_19">
+                                            <ui:ForEachRow.Body>
+                                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304.8,372.8" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum1+Double.Parse(row(1).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum1+Double.Parse(row(1).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum2+Double.Parse(row(2).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum2+Double.Parse(row(2).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEachRow.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ForEachRow>
+                                          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="add to DT_General&#xA;ArrayRow&#xA;{Double_Sum1, Double_Sum2}" ArrayRow="[{Double_Sum1, Double_Sum2}]" DataTable="[DT_General]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="354.4,98.4" sap2010:WorkflowViewState.IdRef="AddDataRow_15">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:AddDataRow>
+                                          <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="354.4,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[DT_SemokETC]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="354.4,521.6" sap2010:WorkflowViewState.IdRef="ForEachRow_20">
+                                            <ui:ForEachRow.Body>
+                                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304.8,372.8" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum1+Double.Parse(row(1).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum1]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum1+Double.Parse(row(1).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                  <Assign sap2010:Annotation.AnnotationText="Double_Sum1 = Double_Sum2+Double.Parse(row(2).ToString.Replace(&quot;,&quot;,&quot;&quot;).Trim)" sap:VirtualizedContainerService.HintSize="263.2,120" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:Double">[Double_Sum2]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:Double">[Double_Sum2+Double.Parse(row(2).ToString.Replace(",","").Trim)]</InArgument>
+                                                    </Assign.Value>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </Assign>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ui:ForEachRow.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ForEachRow>
+                                          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="add to DT_ETC&#xA;ArrayRow&#xA;{Double_Sum1, Double_Sum2}" ArrayRow="[{Double_Sum1, Double_Sum2}]" DataTable="[DT_ETC]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="354.4,98.4" sap2010:WorkflowViewState.IdRef="AddDataRow_16">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:AddDataRow>
+                                        </Sequence>
                                       </Sequence>
                                     </ActivityAction>
                                   </ui:ForEach.Body>
@@ -1075,8 +1345,60 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEach>
+                                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="869.6,660.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" WorkbookPath="[in_Str_FilePath+&quot;\Result\세출_지출_세목_세부사업_예산편성현황_2019.xlsx&quot;]">
+                                  <ui:ExcelApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="836,551.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[Year = &quot;2018&quot;]" sap:VirtualizedContainerService.HintSize="794.4,458.4" sap2010:WorkflowViewState.IdRef="If_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="C6" />
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_7" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="C17" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokGeneral]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_6" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="E6" />
+                                              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_SemokETC]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_8" SheetName="[&quot;세출_지출_&quot;+kind+&quot;(총액)&quot;]" StartingCell="E17" />
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ExcelApplicationScope.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ExcelApplicationScope>
                               </Sequence>
-                              <Sequence x:Key="외화" sap:VirtualizedContainerService.HintSize="560.8,1991.2" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                              <Sequence x:Key="외화" sap:VirtualizedContainerService.HintSize="560.8,2243.2" sap2010:WorkflowViewState.IdRef="Sequence_78">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1477,10 +1799,10 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ExcelApplicationScope>
                               </Sequence>
-                              <Sequence x:Key="추경포함" sap:VirtualizedContainerService.HintSize="560.8,2024.8" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                              <Sequence x:Key="추경포함" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_94">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
